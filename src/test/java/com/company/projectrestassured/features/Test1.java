@@ -3,8 +3,7 @@ package com.company.projectrestassured.features;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 
 import static io.restassured.RestAssured.given;
@@ -20,7 +19,7 @@ public class Test1 {
 
         //Codigo Http Respuesta
         //Codigo del servicio satisfactorio
-        //Esquema del servicio
+        //Validar el Esquema del servicio
         //El contenido de la respuesta del servicio
 
         request = given()
@@ -38,7 +37,7 @@ public class Test1 {
 
         JsonPath jsonPath = new JsonPath(response.getBody().asString());
 
-        Assertions.assertEquals(1, jsonPath.getInt("total_count"));
+        //Assertions.assertEquals(1, jsonPath.getInt("total_count"));
 
     }
 
