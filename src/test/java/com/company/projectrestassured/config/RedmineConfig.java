@@ -25,7 +25,7 @@ public class RedmineConfig {
                         .setPort(8081)
                         .addHeader("Content-Type", "application/json")
                         .addHeader("Accept", "application/json")
-                        .addHeader("X-Redmine-API-Key","3bf031106d2a0f3878e225d012627b995f5eeb9d")
+                        .addHeader("X-Redmine-API-Key","c2481248780185b6944b74fb8a2ca8835cd35ab7")
                         .addFilter(new RequestLoggingFilter())
                         .addFilter(new ResponseLoggingFilter())
                         .build();
