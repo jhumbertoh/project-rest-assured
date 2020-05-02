@@ -4,7 +4,7 @@ import com.company.projectrestassured.config.RedmineConfig;
 import com.company.projectrestassured.config.RedmineEndpoints;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
@@ -64,7 +64,7 @@ public class RedmineOtherTests extends RedmineConfig {
         Response response =
                 given().
                         when()
-                        .get("issues/13.json").
+                        .get("issues/89.json").
                         then()
                         .statusCode(200)
                         .extract().response();
